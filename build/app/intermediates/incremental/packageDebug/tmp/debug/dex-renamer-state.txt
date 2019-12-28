@@ -1,0 +1,4 @@
+#Tue Dec 24 21:00:49 WAT 2019
+base.0=C\:\\Users\\Fruitful\\PersonalProjects\\techsplaining\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
