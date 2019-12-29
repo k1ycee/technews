@@ -15,7 +15,7 @@ class NewsApiProvider{
       return News.fromJson(gist).articles;
     }
     else {
-      throw Exception('Would you mind discarding your device something is obviously wrong with it');
+      throw Exception('Would you mind discarding your device, something is obviously wrong with it');
     }
   }
 }
