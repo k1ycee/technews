@@ -6,6 +6,11 @@ INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\m
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from [:url_launcher] C:\Users\Fruitful\PersonalProjects\techsplaining\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:webview_flutter] C:\Users\Fruitful\PersonalProjects\techsplaining\build\webview_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\3e4a0e851b174ec5aaa8e72bbc3650dc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\e15f0acf604fbfd32d98a1783bed3f8d\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\02c806c2c05cd7a50860bbf40137305b\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -27,6 +32,12 @@ application
 ADDED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\main\AndroidManifest.xml:9:5-32:19
 MERGED from [:url_launcher] C:\Users\Fruitful\PersonalProjects\techsplaining\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher] C:\Users\Fruitful\PersonalProjects\techsplaining\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\e15f0acf604fbfd32d98a1783bed3f8d\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\e15f0acf604fbfd32d98a1783bed3f8d\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:22:18-86
 	android:label
 		ADDED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\main\AndroidManifest.xml:11:9-38
 	android:icon
@@ -69,6 +80,16 @@ INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\m
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\main\AndroidManifest.xml
 MERGED from [:url_launcher] C:\Users\Fruitful\PersonalProjects\techsplaining\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\Users\Fruitful\PersonalProjects\techsplaining\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\Fruitful\PersonalProjects\techsplaining\build\webview_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\Fruitful\PersonalProjects\techsplaining\build\webview_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\3e4a0e851b174ec5aaa8e72bbc3650dc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\3e4a0e851b174ec5aaa8e72bbc3650dc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\1896b76cadbc4f92f403709e29572342\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\e15f0acf604fbfd32d98a1783bed3f8d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\e15f0acf604fbfd32d98a1783bed3f8d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\02c806c2c05cd7a50860bbf40137305b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Fruitful\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\02c806c2c05cd7a50860bbf40137305b\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\debug\AndroidManifest.xml
 INJECTED from C:\Users\Fruitful\PersonalProjects\techsplaining\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:techsplaining/everything/bloc/bloc.dart';
-import 'package:techsplaining/everything/bloc/news_bloc.dart';
 import 'package:techsplaining/everything/models.dart';
 import 'package:techsplaining/everything/repositories.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 
 NewsRepo _newsRepo = NewsRepo();
@@ -22,14 +22,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       primarySwatch: Colors.blue,
       ),
-      home: SafeArea(
-              child: Scaffold(
-                body: BlocProvider(
-                  create: (context) => NewsBloc(newsRepo: newsrepo)..add(FetchNews()),
-                  child: UtiGbain(),
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(title: Text('TechCrunch',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w300),),centerTitle: true,backgroundColor: Colors.black,elevation:0,),
+        body: BlocProvider(
+          create: (context) => NewsBloc(newsRepo: newsrepo)..add(FetchNews()),
+          child: UtiGbain(),
           ),
         ),
-      ),
     );
   }
 }
@@ -55,7 +55,7 @@ class _UtiGbainState extends State<UtiGbain> {
       builder: (context,state){
         if (state is InitialNewsState){
           return Center(
-            child: SpinKitChasingDots(size: 60, color: Colors.black),
+            child: SpinKitChasingDots(size: 60, color: Colors.white),
           );
         }
         if (state is NewsErrorState){
@@ -82,10 +82,38 @@ class News extends StatelessWidget {
   const News({this.articles});
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(articles.title),
-      subtitle: Text(articles.url),
-      onTap: (){},
+    return ExpansionTile(
+          title : Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: ListTile(
+        title: Text(articles.title,style: TextStyle(fontSize: 28, fontWeight: FontWeight.w300,color: Colors.white),),
+        subtitle: Text(articles.author,style: TextStyle(fontSize: 20, fontWeight: FontWeight.w100,color: Colors.white)),
+      ),
+     ),
+     children: <Widget>[
+       Padding(
+         padding: EdgeInsets.all(10.0),
+         child: Column(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           children: <Widget>[
+             IconButton(
+               icon: Icon(Icons.launch,color: Colors.white,),
+               onPressed: () async{
+                 Navigator.pushReplacement(context, MaterialPageRoute(
+                   builder: (context) => Scaffold(
+                     appBar: AppBar(title: Text(articles.title,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w300),),centerTitle: true,backgroundColor: Colors.black,elevation:0,),
+                     body: WebView(
+                       initialUrl: articles.url,
+                       javascriptMode: JavascriptMode.unrestricted,
+                     ),
+                   )
+                 ));
+               },
+            )
+           ],
+         ),
+       )
+     ],
     );
   }
 }
