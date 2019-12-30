@@ -99,7 +99,7 @@ class News extends StatelessWidget {
              IconButton(
                icon: Icon(Icons.launch,color: Colors.white,),
                onPressed: () async{
-                 Navigator.pushReplacement(context, MaterialPageRoute(
+                 Navigator.push(context, MaterialPageRoute(
                    builder: (context) => Scaffold(
                      appBar: AppBar(title: Text(articles.title,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w300),),centerTitle: true,backgroundColor: Colors.black,elevation:0,),
                      body: WebView(
