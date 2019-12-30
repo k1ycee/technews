@@ -1,13 +1,20 @@
-class News {
-    String status;
-    int totalResults;
-    List<Article> articles;
+import 'package:equatable/equatable.dart';
+
+class News extends Equatable{
+    final String status;
+    final int totalResults;
+    final List<Article> articles;
 
     News({
         this.status,
         this.totalResults,
         this.articles,
     });
+
+    @override 
+    List<Object> get props => [articles];
+
+    
 
     factory News.fromJson(Map<String, dynamic> json) => News(
         status: json["status"] == null ? null : json["status"],
@@ -22,17 +29,17 @@ class News {
     };
 }
 
-class Article {
-    Source source;
-    String author;
-    String title;
-    String description;
-    String url;
-    String urlToImage;
-    DateTime publishedAt;
-    String content;
+class Article{
+    final Source source;
+    final String author;
+    final String title;
+    final String description;
+    final String url;
+    final String urlToImage;
+    final DateTime publishedAt;
+    final String content;
 
-    Article({
+   const Article({
         this.source,
         this.author,
         this.title,
@@ -42,6 +49,8 @@ class Article {
         this.publishedAt,
         this.content,
     });
+
+    
 
     factory Article.fromJson(Map<String, dynamic> json) => Article(
         source: json["source"] == null ? null : Source.fromJson(json["source"]),
@@ -67,8 +76,8 @@ class Article {
 }
 
 class Source {
-    String id;
-    String name;
+    final String id;
+    final String name;
 
     Source({
         this.id,
